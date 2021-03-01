@@ -1,0 +1,17 @@
+{
+  "name": "nft_discord_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "jsonexport": "^3.2.0",
+    "opensealib": "git+https://github.com/Kitryn/opensealib.git",
+    "winston": "^3.3.3"
+  }
+}
