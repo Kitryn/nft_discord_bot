@@ -11,7 +11,7 @@
   "dependencies": {
     "discord.js": "^12.5.1",
     "jsonexport": "^3.2.0",
-    "opensealib": "git+https://github.com/Kitryn/opensealib.git",
+    "opensealib": "git+ssh://git@github.com/Kitryn/opensealib.git",
     "winston": "^3.3.3"
   }
 }
