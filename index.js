@@ -11,7 +11,7 @@ winston.loggers.add('default', {
     ]
 })
 
-const { generate_hashmask_csv, generate_gan_v2_csv } = require('opensealib/csv_generator') 
+const { generate_hashmask_csv, generate_gan_v2_csv, generate_mooncat_csv } = require('opensealib/csv_generator') 
 
 
 client.on('ready', () => {
@@ -27,6 +27,10 @@ client.on('message', async msg => {
         msg.channel.send('Getting BGANV2 data, this may take awhile! please wait...')
         let buf = Buffer.from(await generate_gan_v2_csv(), 'utf8')
         msg.channel.send(new Discord.MessageAttachment(buf, 'bganv2.csv'))
+    } else if (msg.content === '!catdata') {
+        msg.channel.send('Getting catdata, this may take awhile...')
+        let buf = Buffer.from(await generate_mooncat_csv(), 'utf8')
+        msg.channel.send(new Discord.MessageAttachment(buf, 'cat.csv'))
     }
 })
 
